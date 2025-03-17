@@ -31,7 +31,8 @@ header{
     height: 100%;
 }
 nav{
-    display: flex;    gap:40px;
+    display: flex;    
+    gap:40px;
     font-size:1.13rem;
     margin:0px 3.93rem 0 0;
 
@@ -63,7 +64,9 @@ font-size:1.2rem;
 
    
 }
+
 /* body */
+/* hero section  */
 section{
     background: var(--primary-color);
 
@@ -132,7 +135,13 @@ cursor:pointer;
     margin-top:-3.43rem;
 }
 
-            /* our service section */
+/* our service section */
+.section-2{
+    position: relative;
+    padding-bottom:18.75rem;
+
+
+} 
 .section-2 h2{
     color:white;
     margin:0 0 5rem 3.93rem;
@@ -190,10 +199,9 @@ line-height: normal;
 }
 
 .cards-btn{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 9px;
     background: #FFF;
     color: #000;
 font-family: Poppins;
@@ -201,23 +209,14 @@ font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-margin:5.5rem 0 0 53.1rem;
+position: relative;
+left:64vw;
+top:5.5rem;
 width:431px;
 height: 56px;
 
 }
-.section-4{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   color: #FFF;
-text-align: center;
-font-family: "Figma Hand";
-font-size: 24.82px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
+
 .plan-header{
 width: fit-content;
 color: #FFF;
@@ -230,10 +229,10 @@ line-height: normal;
 margin:133px 0 26px 0;
 
 }
+/* featured scholar ship section */
 .section-3{
     background: var(--primary-color);
     color:#fff;
-    Padding-top:px;
 }
 .section-3 h2{
     color: #FFF;
@@ -288,7 +287,20 @@ font-style: normal;
 font-weight: 300;
 line-height: normal;
 }
-
+/* subscription plans section  */
+.section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+ text-align: center;
+ font-family: "Figma Hand";
+ font-size: 24.82px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ position:relative;
+ }
 .time-discount{
     display: flex;
 align-items: center;
@@ -335,14 +347,15 @@ background: #B4B4FF;
     display: flex;
     gap:37px;
     position:absolute;
-    top:3066px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    top:400px;
   }
 
 .free {
     display: flex;
-width: 420px;
+max-width: 420px;
+width:100%;
 height: fit-content;
 padding: 33px 25px;
 box-sizing: border-box;
@@ -417,6 +430,7 @@ border: 1.25px solid #000;
 background: #000;
 color:#fff;
   }
+  /* footer section  */
 footer{
     display: flex;
     height: 132px;
@@ -444,14 +458,13 @@ footer{
     color:#000;
   }
 
-
+/* responsiveness for different screen */
 @media (max-width:1280px){
     html{
         font-size:15px; 
     }
     header{
         height: 91.38px;
-        width:100vw;
     }
     .logo{
         margin:0px 3.49rem;
@@ -509,15 +522,11 @@ footer{
     .bg-div img{
         max-width:489.78px;
         max-height: 493.33px;
-        margin-top:-3.05rem;
+        margin-top:-48px;
     }
-    .section-2 h2{
-        margin:0 0 4.44rem 3.49rem;
-        font-size:2.38rem;
-    }
+   
     .cards{
-        gap:4.78rem;
-        margin-left:5.78rem;
+       
         max-width:1137.78px;
         width:90%;
     }
@@ -539,7 +548,6 @@ footer{
         top: 256.44px;
     }
     .cards-btn {
-        padding: 4.89rem 0 0 47.22rem;
         width: 383.11px;
         height: 49.78px;
     }
@@ -608,7 +616,7 @@ footer{
         .bg-div img{
             max-width:441.27px;
             max-height: 444.52px;
-            margin-top:-2.75rem;
+            margin-top:-44px;
         }
         .section-2 h2{
             margin:0 0 4.01rem 3.16rem;
@@ -634,13 +642,13 @@ footer{
         .card img {
             width: 57.92px;
             height: 57.92px;
-            left: 307.78px;
-            top: 232.57px;
+            position: relative;
+            left: 397.78px;
+            top: 200.57px;
         }
         .cards-btn {
-            padding: 4.43rem 0 0 42.77rem;
-            width: 348.19px;
-            height: 45.14px;
+            width: 344.11px;
+            height: 44.78px;
         }
     }
     
@@ -709,7 +717,7 @@ footer{
         .bg-div img{
             max-width:383.69px;
             max-height: 386.81px;
-            margin-top:-2.39rem;
+            margin-top:-39px;
         }
         .section-2 h2{
             margin:0 0 3.5rem 2.72rem;
@@ -738,10 +746,107 @@ footer{
             left: 273.50px;
             top: 170.76px;
         }
-        .cards-btn {
-            padding: 3.82rem 0 100px 36.88rem;
-            width: 300.69px;
-            height: 38.89px;
-        }
+
+       
     }
     
+    @media (max-width: 855px) {
+        html {
+            font-size: 12px; 
+        }
+        header {
+            height: 61.06px;
+            width: 100vw;
+        }
+        .logo {
+            margin: 0px 3.49rem;
+            width: 41.02px;
+            height: 44.6px;
+        }
+        nav {
+            gap: 35.56px;
+            margin: 0px 3.49rem 0 0;
+        }
+        .sign-in {
+            max-width: 54px;
+            max-height: 26.72px;
+            padding: 0.5rem 0.6rem;
+            border-radius: 5.34px;
+        }
+        .log-in {
+            max-width: 54px;
+            max-height: 26.72px;
+            padding: 0.5rem 1.55rem;
+            border-radius: 5.34px;
+        }
+        .hero h1 {
+            max-width: 370.37px;
+            font-size: 2.53rem;
+            margin: 16.08rem 0 0 3.49rem;
+        }
+        .hero > p {
+            max-width: 362.56px;
+            width: 100%;
+            font-size: 1.02rem;
+            padding: 1.33rem 0 0 3.49rem;
+        }
+        .hero-btn {
+            width: 172.33px;
+            height: 28.53px;
+            gap: 8.89px;
+            padding: 1.51rem 0 0 3.49rem;
+        }
+        .hero-btn button {
+            width: 87.62px;
+            height: 28.53px;
+            border-radius: 8px;
+        }
+        .hero-img {
+            margin: 5.78rem 0 0 0;
+        }
+        .bg-div {
+            width: 340.75px;
+            height: 296.87px;
+            margin: 8.55rem 4.11rem;
+            border-radius: 20px;
+            margin-bottom: 5.55rem;
+        }
+        .bg-div img {
+            max-width: 326.95px;
+            max-height: 329.55px;
+            margin-top:-3px;
+        }
+        .section-2 h2 {
+            margin: 0 0 4.44rem 3.49rem;
+            font-size: 2.38rem;
+        }
+        .cards {
+            gap: 4.78rem;
+            margin-left: 5.78rem;
+            max-width: 759.66px;
+            width: 90%;
+        }
+        .card {
+            max-width: 346.87px;
+            height: 245.09px;
+            border-radius: 20px;
+        }
+        .card p {
+            width: 217.32px;
+            left: 40.89px;
+            bottom: 42.67px;
+            font-size: 3.56rem;
+        }
+        .card img {
+            width: 42.29px;
+            height: 42.29px;
+            left: 381.33px;
+            top: 256.44px;
+        }
+        .cards-btn {
+            margin:0;  
+            padding:10px;
+            width: 255.94px;
+            height: 49.78px;
+        }
+    }
